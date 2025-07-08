@@ -5,8 +5,6 @@
 
 It runs in a terminal-like window within the Strongtalk environment and displays yoga poses using beautiful, hand-crafted ASCII art.
 
-
-
 ## Features
 - Coded in a rare, historically significant programming language.
 - Gloriously inaccessible to the average developer.
@@ -22,8 +20,8 @@ Running this requires a journey back in time. You don't "compile" this like a no
 
 #### Step 1: Get Strongtalk
 
-1.  Go to the [Strongtalk GitHub Releases page](https://github.com/strongtalk/strongtalk/releases).
-2.  Download the latest `.dmg` file for macOS (e.g., `strongtalk-0.2.2.dmg`).
+1.  Go to the official Strongtalk GitHub Releases page: **[https://github.com/strongtalk/strongtalk-vm/releases](https://github.com/strongtalk/strongtalk-vm/releases)**
+2.  Download the latest `.dmg` file for macOS (e.g., `strongtalk-vm-0.3.1.dmg`).
 3.  Open the `.dmg` and drag the `Strongtalk` application to your Applications folder.
 4.  **Important:** The first time you open it, macOS will complain that it's from an "unidentified developer". To get around this, **right-click** the Strongtalk app icon and select **Open**. You will only need to do this once.
 
@@ -40,7 +38,7 @@ Running this requires a journey back in time. You don't "compile" this like a no
 1.  Open the `StrongYoga.st` file from this repository in any text editor (like VS Code).
 2.  Select and copy the *entire contents* of the file.
 3.  Go to the `Workspace` window in Strongtalk and paste the code.
-4.  Select all the code you just pasted (Cmd+A), then **right-click** and choose **do it**. This compiles the library into the environment. The `Workspace` will flash, and the code is now "installed".
+4.  Select all the code you just pasted (`Cmd+A`), then **right-click** and choose **do it**. This compiles the library into the environment. The `Workspace` will flash, and the code is now "installed".
 
 #### Step 4: Run the Program
 
@@ -57,7 +55,7 @@ Running this requires a journey back in time. You don't "compile" this like a no
     (myYogaLibrary findPoseNamed: 'Downward-Facing Dog') displayOnTranscript.
     myYogaLibrary showRandomPose.
     ```
-3.  Select all the code in the `Workspace` (Cmd+A), **right-click**, and choose **do it**.
+3.  Select all the code in the `Workspace` (`Cmd+A`), **right-click**, and choose **do it**.
 
 #### Step 5: Find Your Zen
 
