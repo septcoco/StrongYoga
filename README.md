@@ -1,49 +1,48 @@
-# StrongYoga
+# PharoYoga
 > Find your center, one ASCII character at a time.
 
-**StrongYoga** is a completely impractical, largely unusable, and deeply esoteric yoga pose library written in **Strongtalk**, a niche dialect of Smalltalk. It is designed for fun, not for actual use.
+**PharoYoga** is a completely impractical, largely unusable, and deeply esoteric yoga pose library written in **Pharo**, a modern dialect of the Smalltalk programming language. It is designed for fun, not for actual use.
 
-It runs in a terminal-like window within the Strongtalk environment and displays yoga poses using beautiful, hand-crafted ASCII art.
+This project was originally intended for Strongtalk, but that environment proved to be lost to the sands of time. We pivoted to Pharo to keep the esoteric spirit alive in a system that actually runs on modern computers.
 
 ## Features
-- Coded in a rare, historically significant programming language.
+- Coded in a pure object-oriented language from the 1980s.
 - Gloriously inaccessible to the average developer.
-- Zero dependencies (if you don't count the entire Strongtalk virtual machine).
+- Zero dependencies (if you don't count the entire Pharo virtual machine).
 - Displays poses with names, descriptions, and ASCII art.
 - Can select a random pose for spontaneous enlightenment.
 
 ## How to Run This Abomination
 
-Running this requires a journey back in time. You don't "compile" this like a normal program; you load it into a running Strongtalk "image".
+Running this requires you to enter the strange and wonderful world of a "live coding" environment. You don't "compile" this like a normal program; you load it into a running Pharo "image".
 
 **Prerequisites:** A Mac and a sense of adventure.
 
-#### Step 1: Get Strongtalk
+#### Step 1: Get Pharo
 
-1.  Go to the official Strongtalk GitHub Releases page: **[https://github.com/strongtalk/strongtalk-vm/releases](https://github.com/strongtalk/strongtalk-vm/releases)**
-2.  Download the latest `.dmg` file for macOS (e.g., `strongtalk-vm-0.3.1.dmg`).
-3.  Open the `.dmg` and drag the `Strongtalk` application to your Applications folder.
-4.  **Important:** The first time you open it, macOS will complain that it's from an "unidentified developer". To get around this, **right-click** the Strongtalk app icon and select **Open**. You will only need to do this once.
+1.  Go to the official Pharo downloads page: **[https://pharo.org/download](https://pharo.org/download)**
+2.  Select the **macOS** tab.
+3.  Download the **64-bit** version. This will download a `.zip` file.
+4.  Unzip the file. This will create a folder containing the Pharo application. You can move this folder anywhere you like (e.g., your Applications folder).
 
 #### Step 2: Prepare the Environment
 
-1.  Launch the Strongtalk application.
-2.  From the menu bar at the top of your screen, open the two essential tools:
-    - `Tools` -> `Workspace` (This is where you'll type commands).
-    - `Tools` -> `Transcript` (This is where the output will appear).
-3.  Arrange the two windows so you can see both.
+1.  Open the Pharo application inside the folder you just unzipped. macOS might warn you it's from an "unidentified developer". **Right-click** the Pharo app icon and select **Open** to run it the first time.
+2.  A window will appear. This is the Pharo "image". Click anywhere inside it to open the main World Menu.
+3.  From the menu, select `Tools` -> `Transcript`. A new window will open. This is where your output will appear.
+4.  From the menu again, select `Tools` -> `Playground`. This is the new "Workspace" where you will run code.
 
 #### Step 3: Load the Yoga Library
 
-1.  Open the `StrongYoga.st` file from this repository in any text editor (like VS Code).
+1.  Open the `StrongYoga.st` file from this repository in any text editor.
 2.  Select and copy the *entire contents* of the file.
-3.  Go to the `Workspace` window in Strongtalk and paste the code.
-4.  Select all the code you just pasted (`Cmd+A`), then **right-click** and choose **do it**. This compiles the library into the environment. The `Workspace` will flash, and the code is now "installed".
+3.  Go to the `Playground` window in Pharo and paste the code.
+4.  Select all the code you just pasted (`Cmd+A`), then **right-click** and choose **Do it (d)**. The code will execute and install your classes into the environment.
 
 #### Step 4: Run the Program
 
-1.  Delete the installation code from the `Workspace`.
-2.  Copy and paste the following script into the now-empty `Workspace`:
+1.  Delete the installation code from the `Playground`.
+2.  Copy and paste the following script into the now-empty `Playground`:
 
     ```smalltalk
     "--- SCRIPT TO RUN THE YOGA LIBRARY ---"
@@ -55,7 +54,7 @@ Running this requires a journey back in time. You don't "compile" this like a no
     (myYogaLibrary findPoseNamed: 'Downward-Facing Dog') displayOnTranscript.
     myYogaLibrary showRandomPose.
     ```
-3.  Select all the code in the `Workspace` (`Cmd+A`), **right-click**, and choose **do it**.
+5.  Select all the code in the `Playground` (`Cmd+A`), **right-click**, and choose **Do it (d)**.
 
 #### Step 5: Find Your Zen
 
